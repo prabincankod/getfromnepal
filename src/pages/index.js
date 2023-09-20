@@ -10,14 +10,25 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-       
-      <div className=" flex flex-col justify-center items-center h-screen space-y-4">
-        <div className="text-2xl ">
-        कृपया प्रोडक कोड हालेर सर्च दब्नुहोस् ।
-        </div>
-        <div className="flex w-3/4 px-40 h-10 items-center rounded-l-lg  ">
-          <Input style={{ marginRight: '20px' }} />
-          <Button> Search </Button> 
+
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="flex-col lg:flex items-center">
+          <div className="flex-col items-center">
+            <div className="text-2xl font-semibold text-center mb-2">
+              Search Products Here
+            </div>
+            <div className="lg:flex">
+              <Input size="lg" placeholder="enter product code." />
+              <div className="flex ">
+                <Button
+                  size="lg"
+                  className="mx-auto  mt-2 lg:ml-3 lg:mt-0 lg:inline-block"
+                >
+                  Search
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

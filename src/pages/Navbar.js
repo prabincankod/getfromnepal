@@ -11,13 +11,13 @@ const Navbar = () => {
             src="https://www.simicart.com/blog/wp-content/uploads/eCommerce-logo-1.jpg"
           />
           <ul className=" flex flex-auto justify-end px-3 ">
-            <li className= "mx-3">
+            <li className="mx-3">
               <a href="#">Home</a>
             </li>
-            <li className= "mx-3">
+            <li className="mx-3">
               <a href="#">Products</a>
             </li>
-            <li className= "mx-3">
+            <li className="mx-3">
               <a href="#">Contact</a>
             </li>
           </ul>
