@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,6 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex-col lg:flex items-center">
           <div className="flex-col items-center">
@@ -31,6 +31,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+    
   );
 }
