@@ -10,7 +10,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
-      <Navbar className= "sticky top-0"/>
+      <div className="absolute">
+        <img
+          src="https://hdc.gov.tt/wp-content/uploads/2022/06/Webpagehotorangebanner.jpg"
+          alt="logo"
+        />
+      </div>
+      <Navbar className="sticky top-0" />
+      
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex-col lg:flex items-center">
           <div className="flex-col items-center">
@@ -31,8 +38,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
-    
   );
 }
